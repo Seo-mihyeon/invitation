@@ -15,7 +15,7 @@
         }
         
         .letter-close{
-            display: none;
+            display: block;
         }
 
         .envelope{
@@ -26,7 +26,7 @@
             background-size: cover;
             background-position: center;
 
-            margin: 200px auto 0px auto;
+            margin: 180px auto 0px auto;
         }
 
         .envelope-msg{
@@ -34,10 +34,13 @@
             text-align: center;
         }
 
+        .letter-open{
+            display: none;
+        }
         .picture{
             background-color:white;
-            width: 200px;
-            height: 200px;
+            width: 230px;
+            height: 230px;
 
             background-image: url(https://www.urbanbrush.net/web/wp-content/uploads/edd/2019/11/urbanbrush-20191125225811386197.jpg);
             background-size: cover;
@@ -54,7 +57,7 @@
         h1{
             color: white;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 35px;
         }
 
         .msgbox{
@@ -62,6 +65,7 @@
             color: brown;
             width: 400px;
             
+            text-align: center;
             margin: auto;
             padding: 30px;
             
@@ -75,6 +79,14 @@
             text-align: right;
             margin-bottom: 0px;
         }
+
+        @media screen and (max-width: 760px) {
+            .msgbox{
+                width: 300px;
+                padding: 20px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -92,7 +104,7 @@
             올해 코로나로 많이 힘들었지만 <br />
             너희 덕분에 하나도 힘들지 않았어 <br />
             내년에는 좀 더 행복하길 바라며 <br />
-            얼굴이라도 한번 보자 ! <br />
+            ZOOM 으로 얼굴이라도 한번 보자 ! <br />
             <p class="msgbox-end"> 2020.12.26 초대합니다 !</p>
         </div>
     </div>
